@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <title>Modal</title>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+                
+    <!-- Links -->
+    <ul class="navbar-nav">
+    <li class="nav-item">
+        <a class="nav-link" href="index.html">Application 1 : Mini gestion utilisateur</a>
+    </li>
+    
+    
+
+    
+
+    <li class="nav-item">
+        <a class="nav-link" href="projet2.html">Application 2 : TodoList 
+        </a>
+    </li>
+   
+    </ul>
+</nav>
+
+<br>
+<br>
+<br>
+
+
+  <div class="container">
+    <div class="row">
+      <section class="col-md-6">
+
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Ajouter utilisateur</button>
+        
+        
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5>Nouvel utilisateur</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" ></button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="mb-3">
+                    <label for="recipient-name" class="col-form-label" >Prénom:</label>
+                    <input type="text" class="form-control" id="prenom" aria-placeholder="Veuillez saisir votre prénom">
+                  </div>
+                  <div class="mb-3">
+                    <label for="recipient-name" class="col-form-label" >Nom:</label>
+                    <input type="text" class="form-control" id="nom" aria-placeholder="Veuillez saisir votre prénom">
+                  </div>
+                  <div class="mb-3">
+                    <label for="recipient-name" class="col-form-label">Email:</label>
+                    <input type="text" class="form-control" id="email">
+                  </div>
+                  <div class="mb-3">
+                    <label for="recipient-name" class="col-form-label">Poste:</label>
+                    <input type="text" class="form-control" id="poste">
+                  </div>
+                  <button type="button" id="add" class="btn btn-primary" data-bs-dismiss="modal" >Ajouter</button>
+                  
+                </form>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+        <table class="table" id="table">
+          <thead>
+            <tr>
+              <th scope="col">Prénom</th>
+              <th scope="col">Nom</th>
+              <th scope="col">Email</th>
+              <th scope="col">Poste</th>
+              <th scope="col">Supprimer</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Mazine</td>
+              <td>TELLAT</td>
+              <td>mazinetellat@gmail.com</td>
+              <td>Développeur</td>
+              <td><button type="button" class="btn btn-danger">Supprimer</button></td>
+            </tr>
+            <tr>
+              <td >2</td>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>@fat</td>
+              <td><button type="button"  class="btn btn-danger">Supprimer</button></td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Larry</td>
+              <td>the Bird</td>
+              <td>@twitter</td>
+              <td> </td>
+            </tr>
+          </tbody>
+        </table>
+          </section>
+    </div>
+  </div>
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="projet.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+
+
+</body>
+
+</html>
